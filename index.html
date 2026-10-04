@@ -872,7 +872,7 @@
   .card.is-selected:active{ background:var(--cream-deep); }
   .card.is-hero:not(.is-selected){ border-color:var(--line); }
   .card-check{ top:20px; right:20px; width:26px; height:26px; border:3px solid var(--line-strong); }
-  .card.is-selected .card-check{ background:var(--blue); border-color:var(--blue); }
+  .card.is-selected .card-check{ background:var(--orange-deep); border-color:var(--orange-deep); }
   .card-name{ font-size:22px; font-weight:700; letter-spacing:-0.3px; padding-right:38px; min-height:2.5em; }
   .card-price{ font-size:18px; }
   .badge{ background:var(--cream); color:var(--ink-soft); }
@@ -1287,23 +1287,6 @@
         bestFor: ['🥶 Hot & Cold Sensitivity', '✨ After Whitening'],
         badges: [{label:'Sensitive Teeth', cls:'b-teal', icon:'★'}],
         icon: ICON.drop
-      }
-    ],
-
-    addons: [
-      {
-        id: 'addon-flosser', name: 'Water Flosser<br>★★★', descriptor: 'Everyday Home Care', price: 2950, strikePrice: 0, priceTag: 'MRP', hidePriceNumber: true,
-        benefits: ['Professional cleaning at home', 'Great around crowns, bridges & implants', 'Keep gums healthier'],
-        bestFor: ['📆 Everyday Cleaning', '🌿 Gum care', '⛓️ Aligners & braces', '♎ Crowns & bridges'],
-        badges: [{label:'Must Have', cls:'b-gold', type:'accent', icon:'★'}, {label:'Home Upgrade', cls:'b-clay', icon:'★'}],
-        icon: ICON.flosser
-      },
-      {
-        id: 'addon-nightguard', name: 'Night Guard / Tray<br>★★', descriptor: 'Nightly Protection', price: 3000, strikePrice: 3500,
-        benefits: ['Protects against grinding and clenching','Reduces tooth wear', 'Can be used as whitening trays'],
-        bestFor: ['🦷 Teeth grinding', '💢 Jaw discomfort', '🛡️ Smile protection'],
-        badges: [{label:'Recommended', cls:'b-teal', icon:'★'}],
-        icon: ICON.guard
       },
       {
         id: 'addon-sealant', name: 'Pit & Fissure Sealant<br>◾', descriptor: 'Cavity Protection', price: 700, strikePrice: 1200,
@@ -1311,6 +1294,37 @@
         bestFor: ['🔬 Deep grooves', '🦠 High cavity risk'],
         badges: [{label:'Prevent Caries', cls:'b-teal', icon:'★'}],
         icon: ICON.sealant
+      }
+    ],
+
+    addons: [
+      {
+        id: 'addon-flosser', name: 'Water Flosser<br>★★★★', descriptor: 'Everyday Home Care', price: 2950, strikePrice: 0, priceTag: 'MRP', hidePriceNumber: true,
+        benefits: ['Professional cleaning at home', 'Great around crowns, bridges & implants', 'Keep gums healthier'],
+        bestFor: ['📆 Everyday Cleaning', '🌿 Gum care', '⛓️ Aligners & braces', '♎ Crowns & bridges'],
+        badges: [{label:'Must Have', cls:'b-gold', type:'accent', icon:'★'}, {label:'Home Upgrade', cls:'b-clay', icon:'★'}],
+        icon: ICON.flosser
+      },
+      {
+        id: 'addon-remin-gel', name: 'Remineralising Gel<br>★★★', descriptor: 'Enamel Repair Care', price: 0, strikePrice: 0, priceTag: 'MRP', hidePriceNumber: true,
+        benefits: ['Helps repair early enamel weakness', 'Strengthens teeth between visits', 'Easy to use at home'],
+        bestFor: ['🦷 Weak enamel', '🥶 Sensitive teeth', '⛓️ Aligners & braces', '✨ After whitening'],
+        badges: [{label:'Repair Tooth', cls:'b-teal', type:'accent', icon:'★'}],
+        icon: ICON.drop
+      },
+      {
+        id: 'addon-anti-snoring', name: 'Anti-Snoring Device<br>★★★', descriptor: 'Better Nightly Rest', price: 18000, strikePrice: 22000,
+        benefits: ['Helps reduce snoring', 'Custom-fitted for comfort', 'Supports easier night-time breathing'],
+        bestFor: ['😴 Better sleep', '🛌 Partner-friendly nights', '😮‍💨 Snoring'],
+        badges: [{label:'Better Sleep', cls:'b-teal', icon:'★'}],
+        icon: ICON.guard
+      },
+      {
+        id: 'addon-nightguard', name: 'Night Guard / Tray<br>★★', descriptor: 'Nightly Protection', price: 3000, strikePrice: 3500,
+        benefits: ['Protects against grinding and clenching','Reduces tooth wear', 'Can be used as whitening trays'],
+        bestFor: ['🦷 Teeth grinding', '💢 Jaw discomfort', '🛡️ Smile protection'],
+        badges: [{label:'Recommended', cls:'b-teal', icon:'★'}],
+        icon: ICON.guard
       },
 
     ]
